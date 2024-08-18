@@ -32,6 +32,8 @@ export const Digitador: React.FC<DigitadorProps> = ({ text }) => {
   }, [text, isDeleting, currentIndex]);
 
   return (
-    <div className="font-serif font-bold text-lg mt-[20%]">{displayedText}</div>
+    <div className="font-serif font-bold text-lg mt-[20%] text-gray-50">
+      {displayedText}
+    </div>
   );
 };
