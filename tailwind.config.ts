@@ -8,11 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        lemon: {
+          DEFAULT: "#F4E04D", // Limão Siciliano
+          light: "#FFF9C4", // Tonalidade mais clara
+          dark: "#B19E10", // Tonalidade mais escura
+        },
+        white: "#FFFFFF", // Branco
+        black: "#000000", // Preto
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         notice: "url('/img/notice.jpg')",
+      },
+      fontFamily: {
+        minerva: ["minerva-modern", "sans-serif"],
       },
     },
   },

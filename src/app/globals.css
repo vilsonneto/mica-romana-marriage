@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "minerva-modern";
+  src: url("/fonts/minerva-modern-black.ttf") format("ttf"),
+    url("/fonts/minerva-modern-blackitalic.ttf") format("ttf"),
+    url("/fonts/minerva-modern-bold.ttf") format("ttf"),
+    url("/fonts/minerva-modern-bolditalic.ttf") format("ttf"),
+    url("/fonts/minerva-modern-italic.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
