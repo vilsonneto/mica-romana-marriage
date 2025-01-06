@@ -32,7 +32,7 @@ export default function Home() {
         <div className="flex py-6 flex-col justify-end items-center md:w-1/2 w-2/3">
           <Image
             alt="Character"
-            src="/img/romana.JPG"
+            src="/img/romana.jpg"
             height={478}
             width={240}
           />
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
       <section className="relative w-full h-screen mt-6 mb-6">
         <Image
-          src="/img/section.JPG"
+          src="/img/section.jpg"
           alt="alt"
           fill={true}
           style={{ objectFit: "cover", objectPosition: "center" }}
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         <div className="xl:w-2/3 lg:w-full lg:h-full md:w-[250px] md:h-[250px] w-[200px] h-[200px] relative m-auto">
           <Image
-            src="/img/char.JPG"
+            src="/img/char.jpg"
             alt="alt"
             fill={true}
             className="object-cover md:object-bottom bject-bottom "
