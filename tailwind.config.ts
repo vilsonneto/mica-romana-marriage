@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 2s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { backgroundColor: "#F4E04D" }, // Cor bg-lemon
+          "100%": { backgroundColor: "rgba(247, 230, 0, 0)" }, // Transparente
+        },
+      },
       colors: {
         lemon: {
           DEFAULT: "#F4E04D", // Limão Siciliano
@@ -22,9 +31,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         notice: "url('/img/notice.jpg')",
+        mainPhoto: "url('/img/main-photo.jpg')",
       },
       fontFamily: {
-        minerva: ["minerva-modern", "sans-serif"],
+        minerva: ["minerva-modern"],
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        "16": "repeat(16, minmax(0, 1fr))",
+
+        // Complex site-specific column configuration
+        footer: "200px minmax(900px, 1fr) 100px",
       },
     },
   },

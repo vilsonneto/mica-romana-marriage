@@ -30,6 +30,37 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .text-dynamic-hero-title {
+    font-size: calc(2.9 * 1.2vw + 1rem);
+
+    @media (max-width: 768px) {
+      .text-dynamic-hero-title {
+        font-size: calc(1.9 * 1vw + 0.8rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-dynamic-hero-title {
+        font-size: calc(1.2 * 1vw + 0.8rem);
+      }
+    }
+  }
+
+  .text-dynamic-hero-subtitle {
+    font-size: calc((1.9 - 1) * 1.2vw + 1rem);
+
+    @media (max-width: 768px) {
+      .text-dynamic-hero-subtitle {
+        font-size: calc((1.7 - 1) * calc(0.012 * min(100vh, 900px)) + 1rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .text-dynamic-hero-subtitle {
+        font-size: calc(1 * calc(1.2 * min(100vh, 900px)) + 1rem);
+      }
+    }
+  }
 }
 
 @font-face {

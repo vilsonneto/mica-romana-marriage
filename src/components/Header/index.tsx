@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { text } from "stream/consumers";
 
 interface HeaderProps {
   underlineLink?: string;
@@ -9,14 +10,30 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Controla se o menu está aberto ou fechado
+  const [isScrolled, setIsScrolled] = useState(false); // Controla se o usuário rolou a página
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Alterna o estado do menu
   };
 
   return (
-    <header className="font-minerva bg-lemon text-white p-4 text-lg flex lg:justify-around justify-between items-center py-11 px-12">
-      <h1 className="text-xl font-bold w-[100px]">M & R</h1>
+    <header
+      id="header"
+      className={`transition-colors top-0 left-0 right-0 duration-500 z-50 ${
+        isScrolled
+          ? "animate-fadeIn"
+          : isMenuOpen
+          ? "bg-lemon fixed"
+          : "bg-transparent absolute"
+      } text-white font-bold drop-shadow-2xl p-4 text-lg flex lg:justify-around justify-between items-center py-11 px-12`}
+    >
+      <h1
+        className={`text-xl font-bold w-[100px] ${
+          isMenuOpen ? "text-white" : "text-lemon"
+        }`}
+      >
+        M & R
+      </h1>
       {/* Ícone de hambúrguer para dispositivos móveis */}
       <button
         className="lg:hidden p-2 flex flex-col justify-center items-center"
@@ -24,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
         aria-label="Abrir menu"
       >
         <div
-          className={`bg-white block transition-all duration-300 ease-out 
+          className={`bg-white block transition-all duration-500 ease-out 
                     h-0.5 w-6 rounded-sm ${
                       isMenuOpen
                         ? "rotate-45 translate-y-1"
@@ -32,12 +49,12 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
                     }`}
         ></div>
         <div
-          className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-white block transition-all duration-500 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
             isMenuOpen ? "opacity-0" : "opacity-100"
           }`}
         ></div>
         <div
-          className={`bg-white block transition-all duration-300 ease-out 
+          className={`bg-white block transition-all duration-500 ease-out 
                     h-0.5 w-6 rounded-sm ${
                       isMenuOpen
                         ? "-rotate-45 -translate-y-1"
@@ -48,9 +65,9 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
 
       {/* Menu de navegação */}
       <nav
-        className={`lg:flex lg:gap-7 lg:justify-end absolute lg:static top-20 left-0 w-full bg-lemon lg:bg-transparent transition-all duration-300 ease-in-out ${
+        className={`lg:flex lg:gap-7 lg:justify-end absolute lg:static top-20 left-0 w-full bg-lemon lg:bg-transparent transition-colors duration-500 ease-in-out ${
           isMenuOpen
-            ? "block h-screen flex flex-col items-center justify-start pt-[25vh]"
+            ? "h-screen flex flex-col items-center justify-start pt-[20vh] text-3xl gap-1"
             : "hidden"
         }`}
       >

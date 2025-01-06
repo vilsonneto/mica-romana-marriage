@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`flex justify-center flex-col`}>
+      <body className={`flex justify-center flex-col font-minerva`}>
         <div>{children}</div>
+        <footer className="w-full h-[15vh] mt-16 bg-lemon"></footer>
       </body>
     </html>
   );
