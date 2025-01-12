@@ -7,14 +7,14 @@ export default function Home() {
     <>
       <Header underlineLink="/" />
       <Hero
-        image="/img/main-photo.jpg"
+        image="/img/main.jpg"
         objectPosition="40%"
         title="Micael & Romana"
         subtitle="Abril 19, 2024 - Caxias do Sul, RS"
       />
       <section className="mt-10 md:flex-row flex md:justify-center md:items-start gap-0 md:w-1/2 m-auto flex-col items-center w-full">
         <div className="flex py-6 flex-col justify-end items-center md:w-1/2 w-2/3">
-          <Image alt="Character" src="/img/mica.JPG" height={478} width={240} />
+          <Image alt="Character" src="/img/mica.jpg" height={478} width={240} />
           <h3 className="text-lemon-dark text-center text-4xl mt-6 mb-8 uppercase">
             Micael
           </h3>
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
       <section className="relative w-full h-screen mt-6 mb-6">
         <Image
-          src="/img/section.jpg"
+          src="/img/home.jpg"
           alt="alt"
           fill={true}
           style={{ objectFit: "cover", objectPosition: "center" }}
