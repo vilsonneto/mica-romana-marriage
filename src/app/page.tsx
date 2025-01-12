@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         <div className="xl:w-2/3 lg:w-full lg:h-full md:w-[250px] md:h-[250px] w-[200px] h-[200px] relative m-auto">
           <Image
-            src="/img/char.jpg"
+            src="/img/char.JPG"
             alt="alt"
             fill={true}
             className="object-cover md:object-bottom bject-bottom "
