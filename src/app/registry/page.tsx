@@ -62,6 +62,7 @@ export default function RegistryPage() {
               <div className="flex flex gap-4 w-full max-w-md min-w-[300px]">
                 <div className="relative md:w-2/3 w-full">
                   <input
+                    style={{ touchAction: "none" }}
                     onChange={handleChange}
                     className="peer w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:border-slate-500 shadow-sm focus:shadow-md focus:static absolute z-10"
                   />
