@@ -18,7 +18,7 @@ export default function Home() {
           <h3 className="text-lemon-dark text-center text-4xl mt-6 mb-8 uppercase">
             Micael
           </h3>
-          <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center">
+          <p className="text-black md:text-2xl text-xl md:w-2/3 w-full">
             Nascido e criado em Caxias do Sul, Micael é um homem apaixonado por
             Jesus e pela vida, vivendo com intensidade e propósito. Extremamente
             divertido e carismático, ele é um sanguíneo nato, o verdadeiro
@@ -39,7 +39,7 @@ export default function Home() {
           <h3 className="text-lemon-dark text-center text-4xl mt-6 mb-8 uppercase">
             Romana
           </h3>
-          <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center">
+          <p className="text-black md:text-2xl text-xl md:w-2/3 w-full">
             Nascida e criada por 13 anos em Veranópolis, Romana se mudou para
             Caxias devido ao trabalho de seu pai. Sonhadora, ela nunca está
             completamente satisfeita com o que vive e acredita que pode
@@ -68,39 +68,39 @@ export default function Home() {
         </div>
         <div className="lg:block hidden"></div>
         <div className="">
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Micael e Romana se conheceram na igreja Verbo da Vida, em Caxias do
             Sul. À primeira vista, Romana achava que Micael era entojado,
             enquanto ele pensava que ela era quieta. Mal sabiam eles que, na
             verdade, eram igualmente doidos e estavam prestes a descobrir isso
             juntos.
           </p>
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Romana havia decidido que não queria sentir nada por ninguém, mas
             algo mudava quando olhava para Micael. Era um sentimento que, até
             hoje, ela não consegue explicar — ainda mais depois de descobrir que
             ele sentia o mesmo por ela.
           </p>
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Após três meses de observação e muita oração, Deus encontrou um
             jeito curioso de aproximá-los. Durante uma janta entre amigos,
             Micael acabou ficando com um refratário da mãe de Romana. Esse
             simples recipiente virou o “pretexto perfeito” para puxar assunto,
             e, a partir dali, as primeiras conversas começaram a acontecer.
           </p>
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Ainda como amigos, começaram a compartilhar sonhos, valores e
             projetos futuros. Foi nesse processo que perceberam estar caminhando
             na mesma direção e decidiram trilhar esse caminho juntos.
           </p>
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Apaixonados, começaram a planejar o casamento antes mesmo de ficarem
             noivos, acreditando firmemente que Deus, que ama o casamento,
             estaria com eles em cada passo. Desde então, têm vivido experiências
             incríveis da graça de Deus, vendo Seu cuidado em cada detalhe e
             sendo testemunhas de verdadeiros milagres.
           </p>
-          <p className="text-black md:text-xl text-2xl text-center mb-6 md:mb-3">
+          <p className="text-black md:text-xl text-2xl  mb-6 md:mb-3">
             Essa é apenas uma pequena amostra da linda jornada que começaram
             juntos — e do muito que ainda está por vir!
           </p>
