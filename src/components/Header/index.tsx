@@ -89,7 +89,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
             Local
           </Link>
         </div>
-        <div>
+        {/* <div>
           <Link
             href="/event-details"
             data-animation-role="header-element"
@@ -97,8 +97,8 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
           >
             Detalhes do evento
           </Link>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Link
             href="/dress-code"
             data-animation-role="header-element"
@@ -106,7 +106,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
           >
             Dress code
           </Link>
-        </div>
+        </div> */}
         <div>
           <Link
             href="/registry"
@@ -116,7 +116,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
             Confirmação
           </Link>
         </div>
-        <div>
+        {/* <div>
           <Link
             href="/videos"
             data-animation-role="header-element"
@@ -124,8 +124,8 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
           >
             Vídeos
           </Link>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Link
             href="/photos"
             data-animation-role="header-element"
@@ -133,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
           >
             Fotos
           </Link>
-        </div>
+        </div> */}
       </nav>
     </header>
   );
