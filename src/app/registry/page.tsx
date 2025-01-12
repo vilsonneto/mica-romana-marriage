@@ -12,7 +12,8 @@ export default function RegistryPage() {
         title="Confirmação"
       />
       <div className="pt-12">
-        <Subtitle>Como chegar</Subtitle>
+        Leia o QR Code abaixo para nos enviar uma mensagem no WhatsApp e
+        confirmar sua presença nesse dia tão especial. ❤️
       </div>
     </>
   );
