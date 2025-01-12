@@ -16,21 +16,23 @@ Caxias do sul - Rio Grande do Sul"
       <div className="pt-12 mb-6">
         <Subtitle>Como chegar</Subtitle>
       </div>
-      <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-2 mx-auto">
-        Escolhemos o Altos do Vale para celebrar o nosso casamento, um lugar que
-        tem um significado muito especial para nós. Com sua vista incrível e o
-        ambiente acolhedor, esse local reflete perfeitamente a energia do nosso
-        amor e a felicidade desse dia tão esperado.
-      </p>
-      <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-2 mx-auto">
-        Queremos que todos se sintam parte dessa celebração mágica, rodeados
-        pela natureza e por um cenário único que vai tornar este momento ainda
-        mais inesquecível.
-      </p>
-      <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-6 mx-auto">
-        Abaixo, você pode acessar o mapa para facilitar o caminho até o local.
-        Estamos ansiosos para compartilhar esse dia maravilhoso com você!
-      </p>
+      <div className="px-6">
+        <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-2 mx-auto">
+          Escolhemos o Altos do Vale para celebrar o nosso casamento, um lugar
+          que tem um significado muito especial para nós. Com sua vista incrível
+          e o ambiente acolhedor, esse local reflete perfeitamente a energia do
+          nosso amor e a felicidade desse dia tão esperado.
+        </p>
+        <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-2 mx-auto">
+          Queremos que todos se sintam parte dessa celebração mágica, rodeados
+          pela natureza e por um cenário único que vai tornar este momento ainda
+          mais inesquecível.
+        </p>
+        <p className="text-black md:text-2xl text-xl md:w-2/3 w-full text-center mb-6 mx-auto">
+          Abaixo, você pode acessar o mapa para facilitar o caminho até o local.
+          Estamos ansiosos para compartilhar esse dia maravilhoso com você!
+        </p>
+      </div>
       <div className="flex py-6 flex-col justify-end items-center w-full">
         <iframe
           id="map-canvas"

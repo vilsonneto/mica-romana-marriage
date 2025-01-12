@@ -65,7 +65,15 @@ export default function RegistryPage() {
                     onChange={handleChange}
                     className="peer w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:border-slate-500 shadow-sm focus:shadow-md focus:static absolute z-10"
                   />
-                  <label className="absolute cursor-text bg-white px-2 left-2.5 top-2.5 text-slate-400 text-sm transition-all transform origin-left peer-focus:-top-2 peer-focus:left-2.5 peer-focus:text-xs peer-focus:text-slate-400 peer-focus:scale-90 peer-focus:z-10 z-0">
+                  <label
+                    className={`
+                    ${
+                      convidado
+                        ? "-top-2 left-2.5 text-xs text-slate-400 scale-90 z-10"
+                        : "left-2.5 top-2.5"
+                    }
+                      absolute cursor-text bg-white px-2 text-slate-400 text-sm transition-all transform origin-left peer-focus:-top-2 peer-focus:left-2.5 peer-focus:text-xs peer-focus:text-slate-400 peer-focus:scale-90 peer-focus:z-10 z-0`}
+                  >
                     Nome do convite
                   </label>
                 </div>
