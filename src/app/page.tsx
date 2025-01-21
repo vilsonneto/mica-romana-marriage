@@ -56,7 +56,7 @@ export default function Home() {
           src="/img/home.jpg"
           alt="alt"
           fill={true}
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{ objectFit: "cover", objectPosition: "57%" }}
         />
       </section>
 

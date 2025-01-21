@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { text } from "stream/consumers";
+import { AudioPlayer } from "../AudioPlayer";
 
 interface HeaderProps {
   underlineLink?: string;
@@ -71,6 +72,9 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
             : "hidden"
         }`}
       >
+        <div className="">
+          <AudioPlayer />
+        </div>
         <div>
           <Link
             href="/"
@@ -98,15 +102,15 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
             Detalhes do evento
           </Link>
         </div> */}
-        {/* <div>
+        <div>
           <Link
             href="/dress-code"
             data-animation-role="header-element"
             className={underlineLink === "/dress-code" ? "underline" : ""}
           >
-            Dress code
+            Vestimenta
           </Link>
-        </div> */}
+        </div>
         <div>
           <Link
             href="/registry"
