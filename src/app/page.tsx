@@ -1,3 +1,4 @@
+import { CountdownCalendar } from "@/components/CountdownTimer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import Image from "next/image";
@@ -12,6 +13,9 @@ export default function Home() {
         title="Micael & Romana"
         subtitle="Abril 19, 2024 - Caxias do Sul, RS"
       />
+      <section className="mt-10 md:flex-row flex md:justify-center md:items-start gap-0 md:w-1/2 m-auto flex-col items-center w-full">
+        <CountdownCalendar />
+      </section>
       <section className="mt-10 md:flex-row flex md:justify-center md:items-start gap-0 md:w-1/2 m-auto flex-col items-center w-full">
         <div className="flex py-6 flex-col justify-end items-center md:w-1/2 w-2/3">
           <Image alt="Character" src="/img/mica.jpg" height={478} width={240} />
