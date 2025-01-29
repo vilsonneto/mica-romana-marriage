@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { text } from "stream/consumers";
-import { AudioPlayer } from "../AudioPlayer";
+import { AudioControls } from "../AudioControls";
 
 interface HeaderProps {
   underlineLink?: string;
@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
         }`}
       >
         <div className="">
-          <AudioPlayer />
+          <AudioControls />
         </div>
         <div>
           <Link
