@@ -1,6 +1,7 @@
 "use client"; // Garante que este componente seja renderizado no lado do cliente
 
 import React, { useState, useEffect } from "react";
+import { Subtitle } from "../Subtitle";
 
 const targetDate = new Date("2025-04-19T00:00:00").getTime();
 
@@ -49,11 +50,9 @@ export const CountdownCalendar: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg border border-gray-300 w-full">
-      <div className="bg-lemon w-full h-6 rounded-t-lg"></div>{" "}
+      <div className="bg-lemon w-full h-6 rounded-t-lg mb-3"></div>{" "}
       {/* Barra superior vermelha */}
-      <h2 className=" text-xl md:text-4xl font-bold text-lemon-dark mt-4">
-        Contagem Regressiva
-      </h2>
+      <Subtitle>Contagem Regressiva</Subtitle>
       <div className="grid grid-cols-4 gap-4 mt-4 text-center">
         {[
           { label: "Dias", value: timeLeft.dias },
