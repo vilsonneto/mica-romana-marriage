@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Subtitle } from "@/components/Subtitle";
+import Image from "next/image";
 
 export default function DressCodePage() {
   return (
@@ -21,14 +22,55 @@ export default function DressCodePage() {
           Traje: Esporte Fino
         </p> */}
         <p className="text-black md:text-2xl text-xl md:w-2/3 w-full mb-2 mx-auto text-center">
+          Pedimos que os convidados{" "}
+          <span className="font-bold">evitem usar roupas na cor preta</span>,
+          pois será a cor exclusiva do time de padrinhos e madrinhas.
+          Agradecemos a compreensão e estamos animadospara ver o seu look
+          especial!
+        </p>
+        <p className="text-black md:text-2xl text-xl md:w-2/3 w-full mb-2 mx-auto text-center">
           Estamos ansiosos para ver nossos amigos e familiares elegantes em
           nosso casamento! O traje escolhido para a ocasião é{" "}
           <span className="font-bold">esporte fino</span>. Para as mulheres,
           sugerimos vestidos midi ou longos que unam leveza e sofisticação. Para
           os homens, calças sociais ou de alfaiataria combinadas com camisas e
-          blazers são uma ótima escolha. Mal podemos esperar para eternizar
-          momentos especiais ao lado de vocês em trajes tão incríveis!
+          blazers são uma ótima escolha.
         </p>
+        <div className="mt-12 flex flex-wrap justify-around items-center w-2/3 m-auto gap-12">
+          <div className="relative">
+            <Image
+              width={250}
+              height={400}
+              src="/img/convidados-man1.jpg"
+              alt="convidado masculino"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              width={302}
+              height={400}
+              src="/img/convidados-w1.jpg"
+              alt="convidada feminina"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              width={296}
+              height={400}
+              src="/img/convidados-man2.jpg"
+              alt="convidado masculino"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              width={300}
+              height={400}
+              src="/img/convidados-w2.jpg"
+              alt="convidada feminina"
+            />
+          </div>
+        </div>
+        ;
       </div>
     </>
   );
