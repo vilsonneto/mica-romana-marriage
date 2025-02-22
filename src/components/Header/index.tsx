@@ -120,6 +120,14 @@ export const Header: React.FC<HeaderProps> = ({ underlineLink }) => {
             Confirmação
           </Link>
         </div>
+        <div>
+          <Link
+            href="https://casamento-9wdg.listaideal.com.br/pt"
+            target="_blank"
+          >
+            Lista de Presentes
+          </Link>
+        </div>
         {/* <div>
           <Link
             href="/videos"
